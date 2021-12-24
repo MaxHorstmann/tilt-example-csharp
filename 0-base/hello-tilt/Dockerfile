@@ -7,4 +7,4 @@ RUN dotnet restore
 
 # Copy everything else and build
 COPY . ./
-ENTRYPOINT ["dotnet", "watch", "run"]
+ENTRYPOINT ["dotnet", "watch", "run", "--urls", "http://0.0.0.0:80"]
